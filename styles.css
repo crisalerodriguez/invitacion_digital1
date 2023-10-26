@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,600;1,700&family=Poppins:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,600;1,700&family=Pacifico&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('imagen_fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(3, 3, 3);
+}
+
+#botonMusica {
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    padding: 15px;
+    background-color: rgba(226, 148, 148, 0.7); 
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    animation: movimiento 1s infinite alternate; 
+}
+
+#botonMusica img{
+    width: 24px;
+    height: 30px;
+}
+#botonMusica:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes movimiento {
+    from {
+        transform: translateY(-10px); 
+    }
+    to {
+        transform: translateY(10px); 
+    }
+}
+
+audio {
+    display: none; 
+}
+
+.navbar {
+    background-image: url('/imagenes/fondoportada.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0; 
+    padding: 300px 0px;
+}
+
+.navbar h1{
+    font-family: Dancing Script;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.section {
+    text-align: center;
+}
+
+.time{
+    background-color: rgb(231, 197, 152);
+    padding: 40px 0;
+}
+
+.time h2{
+    font-family: 'pacifico';
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.countdown {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.caja{
+    background-color: #c0b4be;
+    width: 450px;
+    padding: 25px;
+    border-radius: 20px;
+    border: 0px solid #c0b4be;
+}
+
+.caja h2{
+    font-family: Pacifico;
+}
+
+.caja p{
+    font-family: Pacifico;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.caja_ubi{
+    margin-top: 30px;
+}
+
+.btn_ubi{
+    background-color: rgba(175, 124, 167, 0.651);
+    padding: 8px;
+    border-radius: 20px;
+    font-family: 'pacifico';
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+    text-decoration: none;
+}
+
+.btn_ubi:hover{
+    background-color: rgb(231, 207, 230);
+}
+
+.column {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.title {
+    font-size: 40px;
+    font-family: pacifico;
+    font-weight: 300;
+}
+
+.gallery {
+    /*display: grid;
+    grid-template-columns: repeat(3, 1fr);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.despedida{
+    background-color: rgb(231, 197, 152);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.despedida h3{
+    font-family: pacifico;
+    font-size: 25px;
+    font-weight: 200;
+
+}
+
+/* FOOTER */
+
+.footer1{
+    margin: 20px;
+}
+
+.caja_info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.creditos{
+    justify-content: center;
+    display: flex;
+}
+
+.creditos_empresa .logo{
+    height: 70px;
+}
+
+.creditos h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.creditos a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(129, 129, 128);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll; 
+    }
+
+    .navbar {
+        padding: 150px 0;
+    }
+
+    .navbar h1 {
+        font-size: 60px;
+    }
+
+    .time{
+        padding: 20px 0;
+    }
+
+    .time h2{
+        font-size: 25px;
+        margin: 15px;
+    }
+
+    .column{
+        display:block;
+    }
+
+    .caja {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5px;
+        margin-bottom: 16px;
+    }
+
+    .caja p{
+        font-size: 22px;
+    }
+
+    .btn_ubi{
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .title{
+        margin-top: -5px;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        margin: 10px;
+    }
+
+    .gallery img {
+        max-width: 250px;
+        width: 100%; 
+        height: auto; 
+        border-radius: 10%;
+        transition: transform 0.3s ease;
+        height: 150px;
+    }
+
+    .despedida{
+        padding: 20px 0;
+    }
+
+    .despedida h3{
+        margin-left: 25px;
+    }
+
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creditos h4{
+        display: block;
+        margin-left: 10px;
+    }
+
+    .creditos a{
+        display: inline;
+    }
+
+    .creditos .logo{
+        height: 70px;
+        width: 150px;
+    }
+
+    .creditos img{
+        width: 20px;
+    }
+}
+
+  /* Tabletas (768px a 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        padding: 200px 0;
+    }
+
+    .navbar h1 {
+        font-size: 60px;
+    }
+
+    .caja{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .caja p{
+        font-size: 26px;
+    }
+
+    .btn_ubi{
+        font-size: 22px;
+    }
+
+    .title{
+        margin-top: -5px;
+    }
+
+    .gallery {
+        display: block;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer1 .contactos p{
+        width: 200px;
+        margin-left: 40px;
+    }
+
+    .footer1 .contactos img{
+        margin-right: 0px;
+        margin-left: 40px;
+        width: 28px;
+    }
+
+    .footer1 .creditos h4{
+        display: inline;
+        font-size: 12px;
+    }
+
+    .footer1 .creditos .a{
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .footer1 .contactos p{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .footer1 .contactos img{
+        margin-left: 40px;
+    }
+
+}
