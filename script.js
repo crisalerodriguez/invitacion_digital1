@@ -27,9 +27,9 @@
     botonMusica.addEventListener("click", function() {
         if (audio.paused) {
             audio.play();
-            iconoMusica.src = "/imagenes/musica/pause.png"; // Cambiar a la imagen de pausa
+            iconoMusica.src = "./imagenes/musica/pause.png"; // Cambiar a la imagen de pausa
         } else {
             audio.pause();
-            iconoMusica.src = "/imagenes/musica/play.png"; // Cambiar a la imagen de reproducción
+            iconoMusica.src = "./imagenes/musica/play.png"; // Cambiar a la imagen de reproducción
         }
         });

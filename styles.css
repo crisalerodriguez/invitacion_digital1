@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('imagen_fondo.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -55,7 +54,7 @@ audio {
 }
 
 .navbar {
-    background-image: url('/imagenes/fondoportada.png');
+    background-image: url('./imagenes/fondoportada.png');
     background-size: cover;
     background-position: center;
     text-align: center;
